@@ -10,6 +10,7 @@ Release: %{release}
 Source0: http://py-gnupg.sourceforge.net/download/%{oname}-%{version}.tar.bz2
 License: LGPL
 Group: Development/Python
+BuildRoot: %{_tmppath}/%{name}-buildroot
 Url: http://py-gnupg.sourceforge.net/
 BuildRequires: python-devel
 BuildRequires:  gnupg
