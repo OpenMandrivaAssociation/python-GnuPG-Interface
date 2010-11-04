@@ -1,6 +1,6 @@
 %define name python-GnuPG-Interface
 %define version 0.3.2
-%define release %mkrel 8
+%define release %mkrel 9
 %define oname GnuPGInterface
 
 Summary: GnuPG-Interface module for python
@@ -36,8 +36,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(-,root,root)
 %doc COPYING ChangeLog MANIFEST NEWS README THANKS
-%{py_puresitedir}/GnuPGInterface.py
-%{py_puresitedir}/GnuPGInterface.pyc
+%{py_puresitedir}/GnuPGInterface.py*
 %{py_puresitedir}/*.egg-info
 
 
