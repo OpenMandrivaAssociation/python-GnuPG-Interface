@@ -1,6 +1,6 @@
 %define name python-GnuPG-Interface
 %define version 0.3.2
-%define release %mkrel 12
+%define release 13
 %define oname GnuPGInterface
 
 Summary: GnuPG-Interface module for python
