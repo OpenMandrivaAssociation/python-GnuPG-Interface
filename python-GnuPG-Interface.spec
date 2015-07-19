@@ -3,7 +3,7 @@
 Summary:	GnuPG-Interface module for python
 Name:		python-GnuPG-Interface
 Version:	0.3.2
-Release:	19
+Release:	20
 License:	LGPLv2
 Group:		Development/Python
 Url:		http://py-gnupg.sourceforge.net/
