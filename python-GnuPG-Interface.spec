@@ -6,7 +6,7 @@ Version:	0.3.2
 Release:	23
 License:	LGPLv2
 Group:		Development/Python
-Url:		http://py-gnupg.sourceforge.net/
+Url:		https://py-gnupg.sourceforge.net/
 Source0:	http://py-gnupg.sourceforge.net/download/%{oname}-%{version}.tar.bz2
 BuildArch:	noarch
 BuildRequires:	gnupg
