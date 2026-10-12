@@ -11,12 +11,19 @@ Source0:	http://py-gnupg.sourceforge.net/download/%{oname}-%{version}.tar.bz2
 BuildArch:	noarch
 BuildRequires:	gnupg
 BuildRequires:	pkgconfig(python)
+BuildRequires:	python%{pyver}dist(setuptools)
 
 %description
 This module provides Python bindings for the GnuPG.
 
 %prep
 %setup -qn %{oname}-%{version}
+# distutils is gone. setuptools rejects the old "licence" keyword.
+sed -i \
+	-e 's/import distutils.core/import setuptools/' \
+	-e 's/distutils.core.setup/setuptools.setup/' \
+	-e 's/licence/license/' \
+	setup.py
 chmod 644 ./*
 
 %build
